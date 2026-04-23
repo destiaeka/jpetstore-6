@@ -20,7 +20,7 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: destiaeka
-        password: "{{ docker }}"
+        password: "{{ docker_password }}"
 
     - name: Push image
       command: docker push destiaeka/petstore:latest
