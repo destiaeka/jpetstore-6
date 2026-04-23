@@ -1,5 +1,6 @@
 - name: docker build and push
-  hosts: 13.223.45.29  # Replace with the hostname or IP address of your target server
+  hosts: localhost  # Replace with the hostname or IP address of your target server
+  connection: local
   become: yes  # Run tasks with sudo privileges
 
   tasks:
