@@ -1,6 +1,7 @@
 ---
 - name: Deploy Kubernetes Application
   hosts: 52.207.162.60  # Replace with your target Kubernetes master host or group
+  remote_user: ec2-user
   gather_facts: yes  # Gather facts about the target host
 
   tasks:
